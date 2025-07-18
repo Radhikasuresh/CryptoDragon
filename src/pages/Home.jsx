@@ -6,6 +6,7 @@ import Loader from '../components/Loader';
 import { toast } from 'react-toastify';
 import { FiPlus, FiSearch } from 'react-icons/fi';
 import { FaMugHot } from 'react-icons/fa';
+import ConfirmModal from '../components/ConfirmModal';
 
 export default function Home() {
   const [coffees, setCoffees] = useState([]);
@@ -14,7 +15,8 @@ export default function Home() {
   const [showForm, setShowForm] = useState(false);
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-
+ const [showConfirmationModal, setShowConfirmationModal] = useState(false);
+ const [coffeeIdToDelete, setCoffeeIdToDelete] = useState(null);
   const loadCoffees = async () => {
     setLoading(true);
     try {
@@ -60,15 +62,21 @@ export default function Home() {
     }
   };
 
-  const handleDelete = async (id) => {
-    if (window.confirm("Are you sure you want to delete this coffee?")) {
-      try {
-        await deleteCoffee(id);
-        toast.success("Coffee deleted");
-        loadCoffees();
-      } catch (err) {
-        toast.error("Error deleting coffee");
-      }
+   const handleDelete = (id) => {
+    setCoffeeIdToDelete(id);
+    setShowConfirmationModal(true);
+  };
+
+  const confirmDelete = async () => {
+    try {
+      await deleteCoffee(coffeeIdToDelete);
+      toast.success("Coffee deleted");
+      loadCoffees();
+    } catch (err) {
+      toast.error("Error deleting coffee");
+    } finally {
+      setShowConfirmationModal(false);
+      setCoffeeIdToDelete(null);
     }
   };
 
@@ -156,6 +164,11 @@ export default function Home() {
             ))}
           </div>
         )}
+         <ConfirmModal
+        open={showConfirmationModal}
+        onClose={() => setShowConfirmationModal(false)}
+        onConfirm={confirmDelete}
+      />
       </main>
 
       <footer className="max-w-7xl mx-auto mt-10 pt-6 border-t border-amber-200 text-center text-amber-700 text-sm">
