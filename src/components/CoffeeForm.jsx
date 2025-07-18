@@ -9,6 +9,8 @@ export default function CoffeeForm({ initialData, onSave, onCancel }) {
     image: "",
   });
 
+  const [isFormValid, setIsFormValid] = useState(false);
+
   useEffect(() => {
     if (initialData) {
       setForm({
@@ -20,6 +22,21 @@ export default function CoffeeForm({ initialData, onSave, onCancel }) {
     }
   }, [initialData]);
 
+  useEffect(() => {
+    const allFieldsFilled = Object.values(form).every(field => field.trim() !== "");
+    
+    const hasFormChanged = initialData 
+      ? !(
+          form.title === initialData.title &&
+          form.description === initialData.description &&
+          form.ingredients === initialData.ingredients?.join(", ") &&
+          form.image === initialData.image
+        )
+      : false;
+
+    setIsFormValid(initialData ? hasFormChanged : allFieldsFilled);
+  }, [form, initialData]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
@@ -27,9 +44,6 @@ export default function CoffeeForm({ initialData, onSave, onCancel }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!form.title || !form.description) {
-      return alert("Title and description are required");
-    }
     const data = {
       ...form,
       ingredients: form.ingredients
@@ -75,7 +89,6 @@ export default function CoffeeForm({ initialData, onSave, onCancel }) {
               onChange={handleChange}
               placeholder="Espresso"
               className="w-full border border-gray-200 p-3 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition"
-              required
             />
           </div>
 
@@ -90,7 +103,6 @@ export default function CoffeeForm({ initialData, onSave, onCancel }) {
               placeholder="Rich, creamy coffee with..."
               rows="3"
               className="w-full border border-gray-200 p-3 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition"
-              required
             />
           </div>
 
@@ -104,7 +116,6 @@ export default function CoffeeForm({ initialData, onSave, onCancel }) {
               onChange={handleChange}
               placeholder="Coffee beans, milk, sugar (comma separated)"
               className="w-full border border-gray-200 p-3 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition"
-              required
             />
           </div>
 
@@ -118,7 +129,6 @@ export default function CoffeeForm({ initialData, onSave, onCancel }) {
               onChange={handleChange}
               placeholder="https://example.com/coffee.jpg"
               className="w-full border border-gray-200 p-3 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition"
-              required
             />
           </div>
         </div>
@@ -133,7 +143,12 @@ export default function CoffeeForm({ initialData, onSave, onCancel }) {
           </button>
           <button
             type="submit"
-            className="px-5 py-2.5 rounded-lg bg-amber-500 text-white hover:bg-amber-600 transition shadow-sm"
+            className={`px-5 py-2.5 rounded-lg ${
+              isFormValid
+                ? "bg-amber-500 hover:bg-amber-600"
+                : "bg-amber-300 cursor-not-allowed"
+            } text-white transition shadow-sm`}
+            disabled={!isFormValid}
           >
             {initialData ? "Update" : "Create"} Coffee
           </button>
